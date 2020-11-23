@@ -31,14 +31,15 @@ nav {
 }
 
 footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   position: fixed;
   background-color: #f2f2f2;
   color: #70757a;
   border-top: 1px solid #dadce0;
   padding: 1.2em 2em;
+  left: 0;
   bottom: 0;
 }
 
@@ -53,17 +54,17 @@ footer {
 }
 
 .footer-left {
-  grid-column: 1/2;
+  flex: 1;
   text-align: left;
 }
 
 .footer-center {
-  grid-column: 2/3;
+  flex: 1;
   text-align: center;
 }
 
 .footer-right {
-  grid-column: 3/4;
+  flex: 1;
   text-align: right;
 }
 
@@ -137,6 +138,7 @@ input:focus {
 
 .search-button {
   font-family: arial, sans-serif;
+  color: #222;
   font-size: 14px;
   background-color: #f8f9fa;
   border: 1px solid #f8f9fa;
@@ -162,5 +164,30 @@ input:focus {
   }
   #google-logo {
     width: 75%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  footer {
+    flex-direction: column;
+  }
+  .footer-center {
+    flex: 1;
+    margin-bottom: 1em;
+    order: 1;
+  }
+
+  .footer-left {
+    flex: 1;
+    text-align: center;
+    margin: 1em;
+    order: 2;
+  }
+
+  .footer-right {
+    flex: 1;
+    text-align: center;
+    margin-top: 1em;
+    order: 3;
   }
 }
