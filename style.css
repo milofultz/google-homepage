@@ -90,7 +90,7 @@ footer {
   place-items: center;
   padding-top: 125px;
   width: 100%;
-  max-width: 80%;
+  max-width: 584px;
   margin: auto;
   transition: all 0.4s ease;
 }
@@ -194,14 +194,14 @@ input:focus {
     order: 1;
   }
 
-  .footer-left {
+  .footer-right {
     flex: 1;
     text-align: center;
     margin: 1em;
     order: 2;
   }
 
-  .footer-right {
+  .footer-left {
     flex: 1;
     text-align: center;
     margin-top: 1em;
