@@ -110,6 +110,7 @@ footer {
 }
 
 #google-logo {
+  position: relative;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -122,11 +123,23 @@ footer {
   max-width: 650px;
 }
 
-#search-bar-wrapper input {
+#search-bar {
   width: 100%;
   border: 1px #ddd solid;
   border-radius: 25px;
-  padding: 1.3em;
+  padding: 0.7em;
+  text-indent: 30px;
+  font-size: 17px;
+}
+
+#magnifying-glass {
+  position: absolute;
+  display: block;
+  font-size: 13px;
+  width: 1.6em;
+  margin-top: 1em;
+  margin-left: 1em;
+  color: #9aa0a6;
 }
 
 input:focus {
