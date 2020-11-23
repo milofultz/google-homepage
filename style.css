@@ -13,6 +13,10 @@ body {
   color: #3c4043;
 }
 
+a {
+  color: inherit;
+}
+
 a:hover {
   text-decoration: underline;
 }
